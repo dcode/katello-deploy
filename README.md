@@ -213,7 +213,7 @@ below:
 Call to virDomainCreateWithFlags failed: Input/output error
 ```
 
-The easiest thing to do is disable selinux using: `sudo setenforce 0`.  Alternatively you can configure libvirt for selinux, see http://libvirt.org/drvqemu.html#securitysvirt
+You should configure libvirt for selinux, see http://libvirt.org/drvqemu.html#securitysvirt. As a last resort, and only in a development environment, the easiest thing to do is disable selinux using: `sudo setenforce 0`, but consider the [impacts](https://imgflip.com/i/x8stq) of your decision.
 
 #### nfs
 
